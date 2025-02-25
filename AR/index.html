@@ -1,0 +1,1221 @@
+<!DOCTYPE html>
+<html lang="ar">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#a50034" />
+    <!-- <base
+      href="https://www.lg.com/ae/get-more-love/test/get-more-love-en.html"
+    /> -->
+    <title>داري الزين | LG UAE</title>
+    <meta name="keywords" content="" />
+    <meta name="title" content="داري الزين | LG UAE" />
+    <meta
+      name="description"
+      content="نقدّم لكم في رمضان هذا العام 'الحب، القصص، والأطباق الشهية' في مطبخ LG مع هالة كاظم"
+    />
+    <meta property="og:title" content="داري الزين | LG UAE" />
+    <meta property="og:url" content="" />
+    <meta
+      property="og:description"
+      content="نقدّم لكم في رمضان هذا العام 'الحب، القصص، والأطباق الشهية' في مطبخ LG مع هالة كاظم"
+    />
+    <meta property="og:image" content="" />
+    <!-- 
+    <link
+      rel="canonical"
+      href="https://www.lg.com/ae/get-more-love/test/get-more-love-en.html"
+    /> -->
+    <script src="./js/tailwind.js"></script>
+    <style>
+      /*Add code for smooth scrolling*/
+      .trusted-by-list {
+        -webkit-transition-timing-function: linear !important;
+        -o-transition-timing-function: linear !important;
+        transition-timing-function: linear !important;
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/css/bootstrap.min.css"
+      integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO"
+      crossorigin="anonymous"
+    />
+  </head>
+  <style>
+    @font-face {
+      font-family: "LG_EI_Headline";
+      src: url(./fonts/LGEIHeadline-Regular.otf);
+    }
+    @font-face {
+      font-family: "LG_EI_Headline_Thin";
+      src: url(./fonts/LGEIHeadline-Thin.otf);
+    }
+    @font-face {
+      font-family: "LG_EI_Headline_SemiBold";
+      src: url(./fonts/LGEIHeadline-Semibold.otf);
+    }
+    @font-face {
+      font-family: "LG_EI_Headline_Bold";
+      src: url(./fonts/LGEIHeadline-Bold.otf);
+    }
+
+    .no-underline {
+      text-decoration: none;
+    }
+    .no-underline:hover {
+      text-decoration: underline;
+    }
+    html {
+      scroll-behavior: smooth;
+    }
+
+    .section {
+    }
+    .section.active {
+    }
+    .swiper-slider {
+      width: 100%; /* Ensure the div takes the full width of its container */
+      height: 0; /* This will be set by the padding-bottom percentage */
+    }
+    .swiper-slide-image {
+      background-size: cover;
+      width: 100%;
+      height: 0;
+      background-repeat: no-repeat;
+      padding-bottom: 123%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      transition: 0.5s;
+      border-radius: 35px;
+    }
+    .swiper-slide-image-1 {
+      background-image: url(./images/episodes/ep-1-hover.png);
+    }
+    .swiper-slide-image-2 {
+      background-image: url(./images/episodes/ep-2-hover.png);
+    }
+    .swiper-slide-image-3 {
+      background-image: url(./images/episodes/ep-3-hover.png);
+    }
+    .swiper-slide-image-1:hover {
+      background-image: url(./images/episodes/ep-1-hover.png);
+    }
+    .swiper-slide-image-2:hover {
+      background-image: url(./images/episodes/ep-2-hover.png);
+    }
+    .swiper-slide-image-3:hover {
+      background-image: url(./images/episodes/ep-3-hover.png);
+    }
+    .play-btn-episodes {
+      position: absolute;
+      top: 40%;
+    }
+    .h2-products {
+      font-family: "LG_EI_Headline_Bold";
+      font-size: 54px !important;
+      font-weight: 800 !important;
+      color: white;
+      line-height: 63.18px !important;
+    }
+    .content-paragraph {
+      font-family: "LG_EI_Headline";
+      font-weight: 600 !important;
+      font-size: 22px !important;
+      line-height: 25.74px !important;
+      padding: 0px 20px;
+    }
+    .saving-box {
+      width: 121px;
+    }
+    .saving-strip-box {
+      width: 121px;
+    }
+    .saving-strip {
+      background-image: url(./images/products/saving-strip.png);
+      background-size: cover;
+      width: 100%;
+      background-repeat: no-repeat;
+      padding-bottom: 34.65%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .saving-strip-text {
+      position: absolute;
+      font-family: "LG_EI_Headline_Thin";
+      font-size: clamp(0.9em, 0.8vw, 1em);
+      top: 20%;
+      left: 25px;
+    }
+    .saving-strip-text-underline {
+      text-decoration: line-through;
+    }
+    .pagination-episodes {
+      bottom: -66px !important;
+    }
+
+    .swiper-slide-carousel {
+      background-size: cover;
+      width: 100%;
+      height: 0;
+      background-repeat: no-repeat;
+      padding-bottom: 124%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      border-radius: 35px;
+      align-items: center;
+    }
+
+    .bg-body-background {
+      background-size: cover;
+      width: 100%;
+      max-width: 1600px;
+      background-position: bottom;
+      background-repeat: no-repeat;
+      background-image: url(./images/bg/back-comp.svg);
+      padding-bottom: 240px;
+    }
+    .product-box {
+      border-radius: 35px;
+    }
+    .wtb-product {
+      max-width: 170px;
+    }
+    .swiper-pagination-bullet {
+      background-color: rgba(217, 217, 217, 1);
+      opacity: 1;
+    }
+    .swiper-pagination-bullet-active {
+      background-color: rgba(163, 0, 53, 1);
+    }
+    .swiper-pagination-bullet {
+      width: 18px;
+      height: 18px;
+    }
+    .product-box-mobile {
+      background-color: white;
+      padding: 16px;
+      color: black;
+      text-align: left;
+      border-radius: 25px;
+    }
+    .product-heading {
+      font-size: clamp(0.8em, 2vw, 2em);
+
+      color: rgba(0, 0, 0, 1);
+      font-weight: 800;
+      line-height: 16.12px;
+      font-family: "LG_EI_Headline_Bold";
+      text-decoration: none;
+      text-align: right;
+    }
+    .product-model {
+      font-size: clamp(0.5em, 0.7vw, 1em);
+      font-weight: 600;
+      text-decoration: none;
+      font-family: "LG_EI_Headline_Thin";
+      color: rgba(98, 98, 98, 1);
+      text-align: right;
+    }
+
+    .product-wtb {
+      text-decoration: none;
+      width: 100px;
+    }
+    .text-saveupto {
+      font-family: "LG_EI_Headline_Thin";
+      font-weight: 600;
+      font-size: 0.7vw;
+      font-size: clamp(0.5em, 0.7vw, 1em);
+      color: rgba(0, 0, 0, 1);
+      text-align: start !important;
+    }
+    .text-discount-price {
+      font-family: "LG_EI_Headline_Bold";
+      font-weight: 800;
+      font-size: clamp(0.8em, 2vw, 2em);
+
+      color: rgba(163, 0, 53, 1);
+      text-align: start !important;
+      margin-top: 1px;
+    }
+    .product-image {
+      border-radius: 25px;
+    }
+    @media (max-width: 767px) {
+      .product-image-mob {
+        border-radius: 10px;
+      }
+      .product-box-mobile {
+        background-color: white;
+        padding: 16px 0 16px 16px;
+        color: black;
+        text-align: left;
+        border-radius: 25px;
+      }
+      .wtb-product-mob {
+        max-width: 90px;
+      }
+      .saving-strip-mob {
+        background-image: url(./images/products/saving-strip.png);
+        background-size: cover;
+        width: 100%;
+        background-repeat: no-repeat;
+        padding-bottom: 34.65%;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .saving-strip-text-mob {
+        position: absolute;
+        font-family: "LG_EI_Headline";
+        font-size: clamp(0.5em, 0.8vw, 1em);
+        top: 20%;
+        right: 18px;
+      }
+      .saving-strip-box-mob {
+        width: 60px;
+      }
+      .product-heading-mob {
+        font-size: clamp(1em, 1vw, 4em);
+        color: rgba(0, 0, 0, 1);
+        font-weight: 800;
+        line-height: 16.12px;
+        font-family: "LG_EI_Headline_Bold";
+        text-decoration: none;
+        text-align: right;
+      }
+      .product-model-mob {
+        font-size: clamp(0.5em, 0.7vw, 1em);
+        font-weight: 600;
+        text-decoration: none;
+        font-family: "LG_EI_Headline_Thin";
+        color: rgba(98, 98, 98, 1);
+        text-align: right;
+      }
+      .text-saveupto-mob {
+        font-family: "LG_EI_Headline_Thin";
+        font-weight: 600;
+        font-size: clamp(0.6em, 0.7vw, 1em);
+        color: rgba(0, 0, 0, 1);
+        text-align: start !important;
+      }
+      .text-discount-price-mob {
+        font-family: "LG_EI_Headline_Bold";
+        font-weight: 800;
+        font-size: clamp(1.3em, 2vw, 3em);
+        line-height: 15px;
+        color: rgba(163, 0, 53, 1);
+        text-align: start !important;
+        margin-top: 1px;
+      }
+      .bg-body-background {
+        background-size: cover;
+        width: 100%;
+        max-width: 1600px;
+        background-position: 25% 75%;
+        background-repeat: no-repeat;
+        background-image: url(./images/bg/back-comp.svg);
+        padding-bottom: 240px;
+      }
+      .swiper-slide-image-1 {
+        background-image: url(./images/episodes/ep-1-mob-hover.png);
+      }
+
+      .swiper-slide-image-2 {
+        background-image: url(./images/episodes/ep-2-mob-hover.png);
+      }
+
+      .swiper-slide-image-3 {
+        background-image: url(./images/episodes/ep-3-mob-hover.png);
+      }
+
+      .swiper-slide-image-1:hover {
+        background-image: url(./images/episodes/ep-1-mob-hover.png);
+      }
+      .swiper-slide-image-2:hover {
+        background-image: url(./images/episodes/ep-2-mob-hover.png);
+      }
+      .swiper-slide-image-3:hover {
+        background-image: url(./images/episodes/ep-3-mob-hover.png);
+      }
+      .play-btn-episodes-image {
+        width: 48px;
+        height: 48px;
+      }
+      .play-btn-episodes {
+        position: absolute;
+        top: 43%;
+      }
+      .h2-products {
+        font-family: "LG_EI_Headline_Bold";
+        font-size: 34px !important;
+        font-weight: 800 !important;
+        color: white;
+        line-height: 42px !important;
+      }
+      .content-paragraph {
+        font-family: "LG_EI_Headline";
+        font-weight: 600 !important;
+        font-size: 16px !important;
+        line-height: 22.74px !important;
+      }
+      .pagination-episodes {
+        bottom: -26px !important;
+      }
+    }
+    a:link {
+      text-decoration: none !important;
+    }
+    .pulse-button:hover {
+      color: #fff;
+      background: rgba(163, 0, 53, 1);
+      border: none;
+      border-radius: 50px;
+      box-shadow: 0 0 0 0 rgba(163, 0, 53, 1);
+      animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(163, 0, 53, 1);
+      }
+
+      70% {
+        transform: scale(1);
+        box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+      }
+
+      100% {
+        transform: scale(0.95);
+        box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+      }
+    }
+    .more-product-box {
+      background-color: #a30035;
+      justify-content: center;
+      border-radius: 35px;
+    }
+    .more-product-text {
+      color: white;
+      font-size: 32px;
+      font-weight: 600;
+    }
+    .where-to-buy-btn {
+      background-color: #a30035;
+      color: white;
+      width: 100%;
+      font-size: clamp(0.5em, 0.8vw, 1em);
+      text-decoration: none;
+      text-align: center;
+      text-transform: uppercase;
+    }
+    .where-to-buy-btn:hover {
+      text-decoration: none;
+      color: white;
+    }
+  </style>
+
+  <div
+    class="mx-auto"
+    style="
+      max-width: 1600px;
+      width: 100%;
+      background-color: black;
+      font-family: Arial, Helvetica, sans-serif;
+      overflow: hidden;
+      direction: rtl;
+    "
+  >
+    <h1 style="display: none">داري الزين</h1>
+    <div
+      class="microsite-header relative block md:hidden lg:hidden bg-black pb-[180px]"
+      style="padding-bottom: 56.25%"
+    >
+      <img
+        class="relative hiding_banner"
+        style="z-index: 999"
+        src="./images/header/Header.jpg"
+        alt="header-image"
+      />
+      <div
+        class="absolute"
+        style="width: 100%; height: 100%; z-index: 999"
+      ></div>
+      <iframe
+        class="absolute top-[-25%]"
+        width="100%"
+        height="100%"
+        style="z-index: 0"
+        src="https://www.youtube.com/embed/Xe33jFEzolM?autoplay=1&mute=1&playsinline=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=Xe33jFEzolM&rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      >
+      </iframe>
+      <div
+        class="header-content absolute bottom-0 bg-black"
+        style="z-index: 999999"
+      >
+        <div class="flex justify-content-center">
+          <img src="./images/header/header_text_mob.svg" alt="" width="80%" />
+        </div>
+      </div>
+    </div>
+    <div
+      class="microsite-header relative hidden md:block lg:block"
+      style="padding-bottom: 56.25%"
+    >
+      <div
+        class="absolute"
+        style="width: 100%; height: 100%; z-index: 999"
+      ></div>
+      <img
+        class="absolute hiding_banner"
+        style="z-index: 999"
+        src="./images/header/Header.jpg"
+        alt="header-image"
+      />
+      <iframe
+        class="absolute"
+        width="100%"
+        height="100%"
+        style="z-index: 0"
+        src="https://www.youtube.com/embed/Xe33jFEzolM?autoplay=1&mute=1&playsinline=1&controls=0&modestbranding=1&rel=0&showinfo=0&loop=1&playlist=Xe33jFEzolM&rel=0"
+        frameborder="0"
+        allow="autoplay; encrypted-media"
+        allowfullscreen
+      >
+      </iframe>
+
+      <div
+        class="header-content absolute bottom-[12%] right-[9%] grid grid-cols-2"
+        style="z-index: 999"
+      >
+        <div class="hiding_banner">
+          <img src="./images/header/header_text.svg" alt="" />
+        </div>
+        <div></div>
+      </div>
+    </div>
+    <div class="mx-auto bg-body-background">
+      <div class="relative pt-[30px] sm:pt-[100px] md:pt-[100px] lg:pt-[100px]">
+        <div>
+          <!-- A grey horizontal navbar that becomes vertical on small screens -->
+
+          <div
+            class="section h-100 px-6 sm:px-6 md:px-16 lg:px-24 xl:px-28 2xl:px-36 text-light text-center"
+          >
+            <span>
+              <div>
+                <div class="slider lg:overflow-hidden">
+                  <div class="swiper-container">
+                    <div class="swiper-wrapper" dir="rtl">
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-image swiper-slide-image-1">
+                          <button class="text-light play-btn-episodes">
+                            <img
+                              class="play-btn-episodes-image pulse-button"
+                              src="./images/play button red bg.png"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-image swiper-slide-image-2">
+                          <button class="text-light play-btn-episodes">
+                            <img
+                              src="./images/play button red bg.png"
+                              class="play-btn-episodes-image pulse-button"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="swiper-slide-image swiper-slide-image-3">
+                          <button class="text-light play-btn-episodes">
+                            <img
+                              src="./images/play button red bg.png"
+                              class="play-btn-episodes-image pulse-button"
+                            />
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div
+                      class="swiper-pagination relative pagination-episodes"
+                      dir="rtl"
+                    ></div>
+                  </div>
+                </div>
+              </div>
+            </span>
+
+            <h2 class="h2-products pt-[100px]">تسوق اختياىات هالة</h2>
+            <p class="content-paragraph pt-[12px] pb-[54px]">
+              أهم المنتجات المميزة في السلسلة
+            </p>
+            <!-- Mobile version -->
+            <span
+              class="section h-100 block xs:hidden sm:hidden md:hidden lg:hidden"
+            >
+              <a
+                class="no-underline"
+                href="https://www.lg.com/ae_ar/built-in-appliances/lg-cbiz2435b"
+              >
+                <div class="product-box-mobile bg-white mb-[20px]">
+                  <div class="grid grid-cols-[45%_55%] py-1">
+                    <div>
+                      <h3 class="product-heading-mob pr-3">موقد مسطح</h3>
+                      <div class="product-model-mob pb-2 pr-3">CBIZ2435B</div>
+                      <div class="saving-strip-box-mob relative text-light">
+                        <div class="saving-strip-mob relative"></div>
+                        <div class="saving-strip-text-mob">
+                          AED
+                          <span class="saving-strip-text-underline">2,499</span>
+                        </div>
+                      </div>
+                      <div class="text-black pr-3 pt-1">
+                        <div class="text-saveupto-mob">وفر حتى 200 AED</div>
+                        <h3 class="text-discount-price-mob mt-[0px]">
+                          AED 2,299
+                        </h3>
+                      </div>
+                      <div class="flex align-items-center mt-2 pr-3">
+                        <img
+                          class="wtb-product-mob"
+                          src="./images/products/where-to-buy-btn.png"
+                          width="100%"
+                          alt="wtb-hub"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        class="product-image-mob"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07588540/gallery/D-01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="no-underline"
+                href="https://www.lg.com/ae_ar/built-in-appliances/lg-hc7z3625s-uae"
+              >
+                <div class="product-box-mobile bg-white mb-[20px]">
+                  <div class="grid grid-cols-[45%_55%] py-1">
+                    <div>
+                      <h3 class="product-heading-mob pr-3">شفاط</h3>
+                      <div class="product-model-mob pb-2 pr-3">HC7Z3625S</div>
+                      <div class="saving-strip-box-mob relative text-light">
+                        <div class="saving-strip-mob relative"></div>
+                        <div class="saving-strip-text-mob">
+                          AED
+                          <span class="saving-strip-text-underline">1,599</span>
+                        </div>
+                      </div>
+                      <div class="text-black pr-3 pt-1">
+                        <div class="text-saveupto-mob">وفر حتى 200 AED</div>
+                        <h3 class="text-discount-price-mob mt-[0px]">
+                          AED 1,399
+                        </h3>
+                      </div>
+                      <div class="flex align-items-center mt-2 pr-3">
+                        <img
+                          class="wtb-product-mob"
+                          src="./images/products/where-to-buy-btn.png"
+                          width="100%"
+                          alt="wtb-hub"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        class="product-image-mob"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07589766/gallery/large01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="no-underline"
+                href="https://www.lg.com/ae/built-in-appliances/lg-mgbz2593f"
+              >
+                <div class="product-box-mobile bg-white mb-[20px]">
+                  <div class="grid grid-cols-[45%_55%] py-1">
+                    <div>
+                      <h3 class="product-heading-mob pr-3">ميكروويف</h3>
+                      <div class="product-model-mob pb-2 pr-3">MGBZ2593F</div>
+                      <div
+                        class="saving-strip-box-mob relative text-light invisible"
+                      >
+                        <div class="saving-strip-mob relative"></div>
+                        <div class="saving-strip-text-mob">
+                          AED
+                          <span class="saving-strip-text-underline">0,000</span>
+                        </div>
+                      </div>
+                      <div class="text-black pr-3 pt-1">
+                        <div class="text-saveupto-mob hidden">
+                          وفر حتى 400AED
+                        </div>
+                        <h3 class="text-discount-price-mob mt-[0px]">
+                          AED 1,599
+                        </h3>
+                      </div>
+                      <div class="flex align-items-center mt-2 pr-3">
+                        <img
+                          class="wtb-product-mob"
+                          src="./images/products/where-to-buy-btn.png"
+                          width="100%"
+                          alt="wtb-hub"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        class="product-image-mob"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07589933/D-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="no-underline"
+                href="https://www.lg.com/ae/built-in-appliances/lg-wsed7667m"
+              >
+                <div
+                  class="product-box-mobile bg-white mb-[20px] hidden"
+                  id="product_4"
+                >
+                  <div class="grid grid-cols-[45%_55%] py-1">
+                    <div>
+                      <h3 class="product-heading-mob pr-3">فرن</h3>
+                      <div class="product-model-mob pb-2 pr-3">WSED7667M</div>
+                      <div class="saving-strip-box-mob relative text-light">
+                        <div class="saving-strip-mob relative"></div>
+                        <div class="saving-strip-text-mob">
+                          AED
+                          <span class="saving-strip-text-underline">5,800</span>
+                        </div>
+                      </div>
+                      <div class="text-black pr-3 pt-1">
+                        <div class="text-saveupto-mob">وفر حتى 801 AED</div>
+                        <h3 class="text-discount-price-mob mt-[0px]">
+                          AED 4,999
+                        </h3>
+                      </div>
+                      <div class="flex align-items-center mt-2 pr-3">
+                        <img
+                          class="wtb-product-mob"
+                          src="./images/products/where-to-buy-btn.png"
+                          width="100%"
+                          alt="wtb-hub"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07590752/gallery/medium01.jpg"
+                        alt="oven product"
+                        class="product-image-mob"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <a
+                class="no-underline"
+                href="https://www.lg.com/ae/dishwashers/lg-dbc425ts-gcc"
+              >
+                <div
+                  class="product-box-mobile bg-white mb-[20px] hidden"
+                  id="product_5"
+                >
+                  <div class="grid grid-cols-[45%_55%] py-1">
+                    <div>
+                      <h3 class="product-heading-mob pr-3">غسالة صحون</h3>
+                      <div class="product-model-mob pb-2 pr-3">DBC425TS</div>
+                      <div class="saving-strip-box-mob relative text-light">
+                        <div class="saving-strip-mob relative"></div>
+                        <div class="saving-strip-text-mob">
+                          AED
+                          <span class="saving-strip-text-underline">2,999</span>
+                        </div>
+                      </div>
+                      <div class="text-black pr-3 pt-1">
+                        <div class="text-saveupto-mob">وفر حتى 600 AED</div>
+                        <h3 class="text-discount-price-mob mt-[0px]">
+                          AED 2,399
+                        </h3>
+                      </div>
+                      <div class="flex align-items-center mt-2 pr-3">
+                        <img
+                          class="wtb-product-mob"
+                          src="./images/products/where-to-buy-btn.png"
+                          width="100%"
+                          alt="wtb-hub"
+                        />
+                      </div>
+                    </div>
+                    <div>
+                      <img
+                        class="product-image-mob"
+                        src="https://www.lg.com/ae/images/dishwashers/md07556727/gallery/D-01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </a>
+              <div
+                class="product-box-mobile bg-white mb-[20px] hidden"
+                id="product_6"
+              >
+                <img src="./images/products/Mood Up.svg" alt="" />
+              </div>
+              <div
+                class="flex justify-content-center my-[50px]"
+                id="load_more_btn"
+              >
+                <button
+                  style="outline: none; box-shadow: none"
+                  onclick="revealNextProducts()"
+                >
+                  <img
+                    src="./images/products/load_more.svg"
+                    width="140px"
+                    alt=""
+                  />
+                </button>
+              </div>
+            </span>
+            <!-- Till here -->
+            <span
+              class="section h-100 hidden xs:block sm:block md:block lg:block"
+            >
+              <div class="grid grid-cols-3 gap-10">
+                <div class="bg-white product-box relative">
+                  <a
+                    href="https://www.lg.com/ae_ar/built-in-appliances/lg-cbiz2435b"
+                  >
+                    <div class="px-3 pt-4 pb-2">
+                      <img
+                        class="product-image"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07588540/gallery/D-01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <h3 class="product-heading px-4 pt-2 pb-2">موقد مسطح</h3>
+                  <div class="product-model px-4 pb-2">CBIZ2435B</div>
+                  <div class="saving-strip-box relative text-light">
+                    <div class="saving-strip relative"></div>
+                    <div class="saving-strip-text">
+                      AED
+                      <span class="saving-strip-text-underline">2,499</span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 px-4 py-2 pb-4">
+                    <div class="text-black">
+                      <div class="text-saveupto">وفر حتى 200 AED</div>
+                      <h3 class="text-discount-price">AED 2,299</h3>
+                    </div>
+                    <div
+                      class="flex align-items-center"
+                      style="max-width: 170px"
+                    >
+                      <a
+                        href="https://www.lg.com/ae_ar/built-in-appliances/lg-cbiz2435b"
+                        class="where-to-buy-btn px-2 py-2"
+                        >أماكن الشراء</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white product-box relative">
+                  <a
+                    href="https://www.lg.com/ae_ar/built-in-appliances/lg-hc7z3625s-uae"
+                  >
+                    <div class="px-3 pt-4 pb-2">
+                      <img
+                        class="product-image"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07589766/gallery/large01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <h3 class="product-heading px-4 pt-2 pb-2">شفاط</h3>
+                  <div class="product-model px-4 pb-2">HC7Z3625S</div>
+                  <div class="saving-strip-box relative text-light">
+                    <div class="saving-strip relative"></div>
+                    <div class="saving-strip-text">
+                      AED
+                      <span class="saving-strip-text-underline">1,599</span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 px-4 py-2 pb-4">
+                    <div class="text-black">
+                      <div class="text-saveupto">وفر حتى 200 AED</div>
+                      <h3 class="text-discount-price">AED 1,399</h3>
+                    </div>
+                    <div
+                      class="flex align-items-center"
+                      style="max-width: 170px"
+                    >
+                      <a
+                        href="https://www.lg.com/ae_ar/built-in-appliances/lg-hc7z3625s-uae"
+                        class="where-to-buy-btn px-2 py-2"
+                        >أماكن الشراء</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white product-box relative">
+                  <a
+                    href="https://www.lg.com/ae_ar/built-in-appliances/lg-mgbz2593f"
+                  >
+                    <div class="px-3 pt-4 pb-2">
+                      <img
+                        class="product-image"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07589933/D-1.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <h3 class="product-heading px-4 pt-2 pb-2">ميكروويف</h3>
+                  <div class="product-model px-4 pb-2">MGBZ2593F</div>
+                  <div class="saving-strip-box relative text-light invisible">
+                    <div class="saving-strip relative"></div>
+                    <div class="saving-strip-text">
+                      AED
+                      <span class="saving-strip-text-underline">0,000</span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 px-4 py-2 pb-4">
+                    <div class="text-black">
+                      <div class="text-saveupto invisible">وفر حتى 400AED</div>
+                      <h3 class="text-discount-price">AED 1,599</h3>
+                    </div>
+                    <div
+                      class="flex align-items-center"
+                      style="max-width: 170px"
+                    >
+                      <a
+                        href="https://www.lg.com/ae_ar/built-in-appliances/lg-mgbz2593f"
+                        class="where-to-buy-btn px-2 py-2"
+                        >أماكن الشراء</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white product-box relative">
+                  <a
+                    href="https://www.lg.com/ae_ar/built-in-appliances/lg-wsed7667m"
+                  >
+                    <div class="px-3 pt-4 pb-2">
+                      <img
+                        class="product-image"
+                        src="https://www.lg.com/ae/images/built-in-appliances/md07590752/gallery/medium01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <h3 class="product-heading px-4 pt-2 pb-2">فرن</h3>
+                  <div class="product-model px-4 pb-2">WSED7667M</div>
+                  <div class="saving-strip-box relative text-light">
+                    <div class="saving-strip relative"></div>
+                    <div class="saving-strip-text">
+                      AED
+                      <span class="saving-strip-text-underline">5,800</span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 px-4 py-2 pb-4">
+                    <div class="text-black">
+                      <div class="text-saveupto">وفر حتى 801 AED</div>
+                      <h3 class="text-discount-price">AED 4,999</h3>
+                    </div>
+                    <div
+                      class="flex align-items-center"
+                      style="max-width: 170px"
+                    >
+                      <a
+                        href="https://www.lg.com/ae_ar/built-in-appliances/lg-wsed7667m"
+                        class="where-to-buy-btn px-2 py-2"
+                        >أماكن الشراء</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div class="bg-white product-box relative">
+                  <a
+                    href="https://www.lg.com/ae_ar/dishwashers/lg-dbc425ts-gcc"
+                  >
+                    <div class="px-3 pt-4 pb-2">
+                      <img
+                        class="product-image"
+                        src="https://www.lg.com/ae/images/dishwashers/md07556727/gallery/D-01.jpg"
+                        alt=""
+                      />
+                    </div>
+                  </a>
+                  <h3 class="product-heading px-4 pt-2 pb-2">
+                    غسالة صحون مدمجة
+                  </h3>
+                  <div class="product-model px-4 pb-2">DBC425TS</div>
+                  <div class="saving-strip-box relative text-light">
+                    <div class="saving-strip relative"></div>
+                    <div class="saving-strip-text">
+                      AED
+                      <span class="saving-strip-text-underline">2,999</span>
+                    </div>
+                  </div>
+                  <div class="grid grid-cols-2 px-4 py-2 pb-4">
+                    <div class="text-black">
+                      <div class="text-saveupto">وفر حتى 600 AED</div>
+                      <h3 class="text-discount-price">AED 2,399</h3>
+                    </div>
+                    <div
+                      class="flex align-items-center"
+                      style="max-width: 170px"
+                    >
+                      <a
+                        href="https://www.lg.com/ae_ar/dishwashers/lg-dbc425ts-gcc"
+                        class="where-to-buy-btn px-2 py-2"
+                        >أماكن الشراء</a
+                      >
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="bg-white d-flex justify-content-center product-box relative"
+                >
+                  <img
+                    src="./images/products/mood-up-pdp.svg"
+                    alt="moodup-image"
+                  />
+                </div>
+              </div>
+
+              <div style="margin-top: 60px; margin-bottom: 40px"></div>
+            </span>
+          </div>
+        </div>
+      </div>
+      <!-- Infinite loop  -->
+      <div class="mt-[100px]">
+        <span>
+          <div>
+            <div class="slider overflow-hidden">
+              <div class="trusted-by-swiper">
+                <div class="swiper-wrapper trusted-swiper"></div>
+              </div>
+            </div>
+          </div>
+        </span>
+        <!-- Until here -->
+        <div>
+          <div
+            class="pb-[236px] pt-[70px] sm:pb-[236px] sm:pt-[70px] md:pb-[300px] md:pt-[107px] lg:pb-[300px] lg:pt-[107px]"
+          >
+            <div
+              class="section h-100 px-6 sm:px-6 md:px-16 lg:px-24 xl:px-28 2xl:px-36"
+            >
+              <span
+                class="section h-100 text-light text-center"
+                id="more-products"
+              >
+                <h2 class="h2-products">تكامل سلس، تصميم أنيق</h2>
+                <p class="content-paragraph pt-[15px] pb-[34px]">
+                  تم تصميم أجهزتنا المتكاملة بخبرة لتتناسب مع مطبخك بسلاسة، مما
+                  يخلق مظهرًا أنيقًا وعصريًا مع تعظيم المساحة والوظائف. استكشف
+                  المجموعة الكاملة أدناه.
+                </p>
+                <div
+                  class="grid grid-cols-3 sm:grid md:hidden lg:hidden sm:grid-cols-3 gap-7"
+                >
+                  <div class="d-flex justify-content-center more-product-box">
+                    <a href="https://www.lg.com/ae/dishwashers"
+                      ><img
+                        class=""
+                        src="./images/more-products/dishwasher-mp-mob.png"
+                        alt="dishwasher-box"
+                        loading="lazy"
+                      />
+                    </a>
+                  </div>
+                  <div class="d-flex justify-content-center more-product-box">
+                    <a href="https://www.lg.com/ae/built-in-appliances"
+                      ><img
+                        class=""
+                        src="./images/more-products/built-in-mp-mob.png"
+                        loading="lazy"
+                        alt="built-in-box"
+                    /></a>
+                  </div>
+                  <div class="d-flex justify-content-center more-product-box">
+                    <a href="https://www.lg.com/ae/refrigerators">
+                      <img
+                        class=""
+                        src="./images/more-products/refrigerator-mp-mob.png"
+                        loading="lazy"
+                        alt="refrigerator-box"
+                      />
+                    </a>
+                  </div>
+                </div>
+                <div
+                  class="hidden md:grid lg:grid md:grid-cols-3 lg:grid-cols-3 gap-7"
+                >
+                  <div
+                    class="d-flex justify-content-center more-product-box py-7"
+                  >
+                    <a href="https://www.lg.com/ae/dishwashers">
+                      <div class="grid grid-rows-[80%_20%]">
+                        <div class="flex justify-content-center align-center">
+                          <img
+                            src="./images/more-products/dishwasher-icon.svg"
+                            loading="lazy"
+                            alt="dishwasher-box"
+                          />
+                        </div>
+                        <div class="more-product-text">غسالة صحون</div>
+                      </div>
+                    </a>
+                  </div>
+                  <div
+                    class="d-flex justify-content-center more-product-box py-7"
+                  >
+                    <a href="https://www.lg.com/ae/built-in-appliances">
+                      <div
+                        class="flex justify-content-center align-center bg-dark"
+                      >
+                        <div class="grid grid-rows-[80%_20%]">
+                          <div class="flex justify-content-center align-center">
+                            <img
+                              src="./images/more-products/built-in-icon.svg"
+                              loading="lazy"
+                              alt="built-in"
+                            />
+                          </div>
+                          <div class="more-product-text">مدمجة</div>
+                        </div>
+                      </div>
+                    </a>
+                  </div>
+                  <div class="d-flex justify-content-center more-product-box">
+                    <a href="https://www.lg.com/ae/refrigerators">
+                      <div class="grid grid-cols-1">
+                        <div class="flex justify-content-center">
+                          <img
+                            src="./images/more-products/refrigerator-icon.svg"
+                            loading="lazy"
+                            alt="built-in"
+                          />
+                        </div>
+                        <div class="more-product-text">ثلاجة</div>
+                      </div></a
+                    >
+                  </div>
+                </div>
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+
+  <script
+    src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js"
+    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+    crossorigin="anonymous"
+  ></script>
+  <script
+    src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js"
+    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+    crossorigin="anonymous"
+  ></script>
+
+  <script>
+    var $swiperSelector = $(".swiper-container");
+
+    $swiperSelector.each(function (index) {
+      var $this = $(this);
+      $this.addClass("swiper-slider-" + index);
+
+      var dragSize = $this.data("drag-size") ? $this.data("drag-size") : 150;
+      // var freeMode = $this.data("free-mode") ? $this.data("free-mode") : true;
+      // var loop = $this.data("loop") ? $this.data("loop") : false;
+      var slidesDesktop = $this.data("slides-desktop")
+        ? $this.data("slides-desktop")
+        : 3;
+      var slidesTablet = $this.data("slides-tablet")
+        ? $this.data("slides-tablet")
+        : 3;
+      var slidesMobile = $this.data("slides-mobile")
+        ? $this.data("slides-mobile")
+        : 1.1;
+      var spaceBetween = $this.data("space-between")
+        ? $this.data("space-between")
+        : 30;
+
+      var swiper = new Swiper(".swiper-slider-" + index, {
+        direction: "horizontal",
+        loop: false,
+        freeMode: false,
+        spaceBetween: spaceBetween,
+        breakpoints: {
+          1920: {
+            slidesPerView: slidesDesktop,
+          },
+          992: {
+            slidesPerView: slidesTablet,
+          },
+          757: {
+            slidesPerView: 3,
+          },
+          320: {
+            slidesPerView: slidesMobile,
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+    });
+  </script>
+  <script src="https://www.lg.com/ae/oled-tvs/poseambience/js/gsap.min.js"></script>
+  <script src="./js/script_1.js"></script>
+  <script src="./js/script_2_carousel.js"></script>
+</html>
